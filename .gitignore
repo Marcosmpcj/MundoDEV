@@ -1,12 +1,7 @@
-# Arquivos de Certificados grandes (PDFs)
+# Arquivos de Certificados grandes (PDFs) - MANTIDO
 Cursos/**/Certificados/**/*.pdf
 
-# Pastas antigas que eram repositórios (garantindo que não voltem)
-Cursos/DIO/Aulas-DIO/Logica-Programacao/
-Cursos/DIO/Projetos-DIO/Trilha-CSS/landingPage/
-Cursos/DankiCode/Projetos-Danki/Trilha-Javascript/
-
-# Outros arquivos grandes ou temporários
+# Outros arquivos grandes ou temporários - MANTIDO
 *.log
 *.tmp
 *.bak
