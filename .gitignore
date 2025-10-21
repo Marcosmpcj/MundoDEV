@@ -1,9 +1,0 @@
-# Arquivos de Certificados grandes (PDFs) - MANTIDO
-Cursos/**/Certificados/**/*.pdf
-
-# Outros arquivos grandes ou temporários - MANTIDO
-*.log
-*.tmp
-*.bak
-*.zip
-*.rar
