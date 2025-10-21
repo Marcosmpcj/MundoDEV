@@ -1,0 +1,14 @@
+# Arquivos de Certificados grandes (PDFs)
+Cursos/**/Certificados/**/*.pdf
+
+# Pastas antigas que eram repositórios (garantindo que não voltem)
+Cursos/DIO/Aulas-DIO/Logica-Programacao/
+Cursos/DIO/Projetos-DIO/Trilha-CSS/landingPage/
+Cursos/DankiCode/Projetos-Danki/Trilha-Javascript/
+
+# Outros arquivos grandes ou temporários
+*.log
+*.tmp
+*.bak
+*.zip
+*.rar
