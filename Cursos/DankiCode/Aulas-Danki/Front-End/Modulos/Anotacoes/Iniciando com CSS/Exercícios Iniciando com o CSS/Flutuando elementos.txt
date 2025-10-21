@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<htmL>
+<head>
+    <link href="css/style.css" rel="stylesheet">
+    <title> Flutuando elementos</title>
+</head>
+<body>
+    <div class="pai">
+        <div class="box"></div>
+        <div class="box"></div>
+        <p>Praesent molestie id justo sit amet elementum. Vivamus maximus orci luctus augue tempus feugiat. In in nulla efficitur, blandit urna quis, interdum dolor. Vestibulum ultricies condimentum accumsan. Proin interdum rutrum nunc, sed rhoncus nunc commodo at. Vestibulum consequat hendrerit elit, ac luctus ante semper nec. Nunc rhoncus, mi eu venenatis rhoncus, turpis nunc sollicitudin felis, at scelerisque mauris erat eget ligula. Sed porta, diam eget euismod auctor, arcu risus convallis nunc, sed lobortis lacus magna at neque. Proin commodo felis vitae nibh eleifend, quis eleifend urna laoreet. Fusce tincidunt iaculis nisl, at semper nulla feugiat sed. Duis in eros sagittis, aliquam eros at, pharetra mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed velit justo, auctor id facilisis sed, luctus varius felis. Proin pretium imperdiet metus sit amet imperdiet. Praesent posuere justo tortor, non lacinia libero sagittis in.</p>
+
+
+
+
+        <!--<div class="box1"></div>-->
+
+    </div><!--pai-->
+  
+</body>
+
+</htmL> 
+
+//CSS
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box{
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin: 10px;
+}
+
+/*.box1{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(28, 0, 186);
+    /*clear: both;
+    display: inline-flex:    
+}*/
+p{
+    clear:both; /*TIRA A CONFIGURAÇÃO DE FLOAT DOS PRÓXIMOS ELEMENTOS*/
+}
+

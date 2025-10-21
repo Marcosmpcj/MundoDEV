@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<htmL>
+<head>
+    <link href="css/style.css" rel="stylesheet">
+    <title>Definindo limites</title>
+</head>
+<body>
+    <div class="imagem">
+        <img src="https://i.scdn.co/image/ab67616d0000b273b548a20a597a88b29932513b">
+    </div>
+
+
+</body>
+
+</htmL> 
+
+//CSS
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.imagem img{
+    width: 300px;
+    height: 200px;
+    margin: 0 auto;
+    display: block;
+    margin: 0 auto;/*FORMA DE CENTRALIZAR UMA IMAGEM*/
+    max-width: 90%;/*EVITAR QUE ALGO ULTRAPASSE OS LIMITES ESTIPULADOS*/
+    
+}
+.imagem{
+    display: flex;
+    justify-content: center;
+    align-items:center;/*OUTRA FORMA DE CENTRALIZAR É DENTRO DE 
+    UMA DIV, COLOCAR ISSO*/
+}

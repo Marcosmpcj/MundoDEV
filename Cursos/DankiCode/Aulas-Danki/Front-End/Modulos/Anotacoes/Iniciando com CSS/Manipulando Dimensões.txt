@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<link href="css/teste1.css" rel="stylesheet">
+<title>Manipulando Dimensões</title>
+</head>
+<body>
+<div class="artigo">
+    <h2>Lorem Ipsum</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut nunc quam. Nunc venenatis justo nec ante lobortis ultrices egestas vel ex. Nulla a facilisis nisl. In suscipit placerat risus sit amet tristique. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer consequat auctor rhoncus. Phasellus vitae massa lacinia, vehicula ex in, dapibus augue. Quisque congue vel massa et maximus. Donec ut enim a lacus feugiat mollis vel quis nunc. Sed gravida ligula sed turpis tristique tempor. 
+    Aliquam erat volutpat.</p><!--EXEMPLO DE ARTIGO-->
+</div>
+
+</body>
+
+</html>
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+html,body{
+    height: 100%;
+} /*Para manipular 100% do height no CSS*/
+
+/*Manipulando Dimensões */
+.artigo {
+    background-color: rgb(118, 136, 136);
+    width: 80%;
+    max-width: 200px;
+    height:90%;
+
+
+    
+}
+.artigo h2{
+    color: rgb(255, 255, 255);
+    font-size: 23px;
+}
+.artigo p{
+    text-align: left;
+    font-size: 17px;
+    
+}

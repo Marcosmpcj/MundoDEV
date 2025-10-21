@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<link href="css/teste1.css" rel="stylesheet">
+<title>Reutilizando a Mesma Classe</title>
+</head>
+<body>
+
+    <p class="tipo1">Conteúdo do meu parágrafo</p>
+    <a class="link_ tipo1 tipo2" href="http://www.google.com" target="_blank"> Meu Link</a> 
+   
+
+</body>
+
+</html>
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+} /*Para manipular 100% do height no CSS*/
+
+/*Reutilizando a Mesma Classe */
+
+.tipo1{
+    color: rgb(100,100,100);
+}
+.link_{
+    font-size: 30px;
+}
+.tipo2{
+    font-size: 50px;
+}/*em ambos os casos (.tipo1;.tipo2;.link_) são inferiores a especificidade 
+do ataque (a.tipo1/.tipo2/.link_), independente da ordem*/
+
+a.link_{
+    font-size: 10px;
+}

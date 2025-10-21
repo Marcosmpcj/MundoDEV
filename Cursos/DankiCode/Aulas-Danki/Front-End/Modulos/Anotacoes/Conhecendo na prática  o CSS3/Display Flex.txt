@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Display Flex</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale: 1.0, maximum-scale: 1.0">
+    <link href="CSS/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <main>
+        <aside>
+            <h2>Artigos Relacionados</h2>
+            <ul>
+                <li>Artigo 1</li>
+                <li>Artigo 2</li>
+                <li>Artigo 3</li>
+            </ul>
+        </aside>
+        <article>
+            <h2>Meu Título</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique rerum quibusdam temporibus deserunt, dolorum sit fuga nihil, iusto eaque asperiores magnam cum repellendus consequuntur quos pariatur quod error dignissimos amet.</p>
+            
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique rerum quibusdam temporibus deserunt, dolorum sit fuga nihil, iusto eaque asperiores magnam cum repellendus consequuntur quos pariatur quod error dignissimos amet.</p>
+        </article>
+    </main>
+
+</body>
+
+</html>
+
+//CSS
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    height: 100%;
+}
+
+main{
+    display: flex ;
+    align-items: center;
+}
+aside{
+    order: 2;/*mesma funcionalidade que o (flex-direction: row-reverse) */
+    background-color: #ccc;
+    padding: 30px;
+}
+article{
+    order: 1;/*mesma funcionalidade que o (flex-direction: row-reverse) */
+    background-color: gray;
+    padding: 30px;
+}
+
+ /*
+ ==> PROPRIEDADES USADAS NO PARENT
+ >flex-direction: row; = itens dispostos em linha ;
+ >flex-direction: row-reverse; = itens dispostos em linha e invertidos;
+ >flex-direction:column; = itens dispostos em colunas;
+ >flex-direction:column-reverse; = itens dispostos em colunas e invertidos;
+ >flex-wrap: wrap; = repeita a quebra de linha, logo quand necessário;
+ >flex-wrap: wrap-reverse; = repeita a quebra de linha, logo quand necessário e inverte os itens;
+ >flex-flow: column/row wrap ; = junção das duas funcionalidades do wrap e direction;
+ >justify-content: center; = alinha os itens horizontalmente no eixo-X em relação ao parent;
+ >justify-content: space-between; = alinha horizontalmente com o mesmo espaçamento entre os itens, sem os lados;
+ >justify-content: space-around; = alinha horizontalmente com  espaçamento ao redor dos itens;
+ >justify-content: space-evenly; = alinha horizontalmente com o mesmo espaçamento considerando todas as laterais;
+ >align-item: center; = alinha os itens verticalmente no eixo-Y em relação ao parent;
+ ## gap: (linha)px (coluna)px ; = atribui um espaçamento entre os itens, tipo uma margem;
+
+  ==> PROPRIEDADES USADAS NO CHILD
+
+>flex-grow: 1 ; = aumenta a qtd de espaço disponível para uso que o item ocupa;
+>flex-shrink: 2 ; = diminui a qtd de espaço disponível para uso que o item ocupa;
+>flex-basis: 100px ; = atribui um valor específico para o tamanho de um item;
+>flex: ; = junta as propriedade do (grow/shrink/basis) nesta ordem; 
+>align-self: ; = alinha um item específico na vertical;
+>order: 3 ; = altera a ordem dos itens da posição inicial;
+*/

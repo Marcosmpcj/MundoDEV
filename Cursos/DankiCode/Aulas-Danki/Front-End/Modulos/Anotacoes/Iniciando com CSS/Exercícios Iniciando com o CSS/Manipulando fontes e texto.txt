@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<htmL>
+<head>
+    <link href="css/style.css" rel="stylesheet">
+    <title>Manipulando fontes e texto</title>
+</head>
+<body>
+    <div class="texto">
+        <h1>Personalizando textos</h1>
+        <p>Donec sit amet enim non nisl condimentum laoreet mollis vitae lectus. Aliquam non est pulvinar, dapibus lectus a, lobortis sapien. Vivamus eros tellus, molestie venenatis congue ut, gravida nec urna. Maecenas a laoreet mi. Pellentesque tristique pretium felis, ac finibus enim. Nullam ultrices, nunc vel rhoncus cursus, dui sapien scelerisque est, in bibendum enim est tristique velit. Maecenas auctor, enim viverra placerat aliquam, neque nunc pulvinar elit, non mattis tellus est in nulla. Integer in imperdiet dui. Etiam nulla metus, facilisis eget elementum ac, dapibus vel ipsum. Proin egestas dui consequat enim sagittis, dapibus mattis risus pellentesque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam porta nisl id enim finibus venenatis. Nullam scelerisque ex urna, nec vestibulum tortor sodales et. In a orci feugiat, dictum neque iaculis, ultricies lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce fringilla lectus vel imperdiet vulputate.</p>
+    </div><!--texto-->
+   
+</body>
+
+</htmL> 
+
+//CSS
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(3, 3, 103);
+}
+.texto p{
+    text-align: justify;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+    width: 80%;
+    margin: 0 auto;
+ margin-top: 15px;
+}
+.texto h1{
+    color: grey;
+    text-align:center ;
+}
+

@@ -1,0 +1,19 @@
+//laços de repetição - while, do while, for
+
+let i = 0
+while (i < 10) {
+    //enquando for true, execute isso!
+    console.log(i)
+
+    i++
+}
+
+for (let x = 10; x < 20; x++) {
+    //enquando for true, execute isso!
+    console.log(x)
+}
+
+do {
+    //execute isso, pelo menos uma vez.
+    console.log(i)
+} while (i < 5)

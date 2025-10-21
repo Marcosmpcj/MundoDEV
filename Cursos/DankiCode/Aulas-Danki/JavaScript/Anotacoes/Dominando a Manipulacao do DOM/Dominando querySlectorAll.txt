@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Javascript</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/assets/css/global.css" rel="stylesheet">
+    <script src="/assets/js/global.js" defer></script>
+
+</head>
+<body>
+    <div class="section-1">
+        <h1>Este é meu primeiro título.</h1>
+        <div class="inside-section-1">
+            <p>Este é meu primeiro texto.</p>
+        </div>
+    </div>
+
+    <div class="section-2">
+        <h1>Este é meu segundo título.</h1>
+        <div class="inside-section-2">
+            <p>Este é meu segundo texto.</p>
+        </div>
+    </div>
+
+<script>
+
+let els = document.querySelectorAll('.section-1 h1'); //NodeLis é uma lista.
+//usar forEach, for ou array.
+
+els[0].style.color = 'red'
+
+
+
+</script>
+</body>
+
+</html>

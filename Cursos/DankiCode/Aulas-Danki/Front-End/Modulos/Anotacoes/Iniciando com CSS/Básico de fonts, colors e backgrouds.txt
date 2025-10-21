@@ -1,0 +1,124 @@
+<html>
+    <head>
+        <!-- font importada do google font; deve ser colocada antes do style-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap" rel="stylesheet">
+        
+        <link href="css/style.css" rel="stylesheet">
+
+        <title>Módulo CSS</title>
+    </head>
+    <body>
+        <h2>Este é meu Website</h2>
+<br>
+        <p>Para começar, vamos testar a font desse site</p>
+
+    <!--
+        (.)CLASS : identifica/diferencia uma tag para ser estilizada no css.
+        (#)ID : mesma coisa, porém mais comum e usual no javascript.
+    -->
+        <h3 class="teste1">Teste de Identificação 1</h3>
+        <h3 class="teste2">Teste de Identificação 2</h3>
+        <br>
+
+        <!--
+        usando [] consiguimos manipular atributos no css
+        -->
+
+    <form>
+        <input type="text" />
+        <input type="button" value="Clique AQui"/>
+    </form>
+
+    <p name="parágrafo1">Teste para chamar atributo no css</p>
+    <p name="parágrafo2">Teste para chamar atributo no css</p>
+    <br>
+
+    <!--
+    manipulando backgrounds
+    -->
+
+    <div class="teste-cores2">
+        <h3 class="teste-cores">Olá Marcos</h3>
+    </div>
+    <div class="bg"></div>
+    <br>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: verdana;
+}
+
+h2{
+    font-family:Rubik Vinyl;
+    font-size:24px;
+    font-style: oblique;
+}
+/*
+    (.)CLASS : identifica/diferencia uma tag para ser estilizada no css.
+    (#)ID : mesma coisa, porém mais comum e usual no javascript.
+*/
+.teste1{
+    color:blue;
+    font-family: Cambria;
+    font-size: larger;   
+}
+.teste2{
+    color:red;
+    font-family:Times New Roman;
+    font-size: normal;
+}
+/* para chamar atributos do html pode-se usar também []*/
+[type=button]{
+    color:green;
+}
+[type=text]{
+    background-color: green;
+    width: 300px;
+}
+[name=parágrafo1]{
+    color:violet;
+}
+
+[name=parágrafo2]{
+    color:blue;
+}
+
+/*manipulando backgrounds*/
+.teste-cores2{
+    background-color:#080680
+}
+.teste-cores{
+    color:aliceblue;
+}
+.bg{
+    width: 100%;
+    height: 300px;
+    background-image: url('../paisagem.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+</html>

@@ -1,0 +1,36 @@
+// DOM(Document Object Model) - forma de representar o documento na página web
+    //através do javascript conseguimos acessar o DOM e manipular nosso documento.
+
+//DOM != javascript
+    //é importante falar que o DOM é uma forma de representar o documento e não se limita apenas a javascript. Apesar de que na maioria das vezes é utilizado de tal forma.
+ 
+//Manipulação Básica de Elementos e Conteúdo.
+
+
+var p = document.getElementsByTagName('p')
+console.log(p[1].innerHTML) //retorna o conteudo dentro do html
+
+p[2].innerHTML = 'Manipulado via JS!'
+console.log(p[2].innerHTML) //manipulando com o JS
+
+for (let i = 0; i < p.length; i++){
+    p[i].innerHTML = 'Manipulando com JS dinamico - ' + i
+}
+
+let span = document.getElementsByTagName('span');
+for (let x = 0; x < 5; x++){
+    span[0].innerHTML = span[0].innerHTML + ' /' +x;
+}
+
+
+
+ 
+
+
+
+
+
+
+
+
+

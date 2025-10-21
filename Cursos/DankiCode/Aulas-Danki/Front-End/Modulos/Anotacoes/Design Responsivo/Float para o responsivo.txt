@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <link href="css/style.css" rel="stylesheet">
+        <title>Float para o responsivo</title>
+    </head>
+    <body>
+        
+        <div class="container">
+            <div><div class="box"></div></div>
+            <div><div class="box"></div></div>
+            <div><div class="box"></div></div>
+        </div><!--container-->
+        
+    </body>
+</html>
+
+//CSS
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    height: 100%;
+}/*para usar % no height em algum lugar do código,deve-se antes declarar no html,body*/
+
+.container{
+    width: 98%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #ccc;
+}
+
+.box{
+    border: 1px solid black;
+    width: 33.3%;
+    height: 300px;
+    background-color: green;
+    float: left;
+}
+@media screen and (max-width: 768px){
+    .container{
+        text-align: center;
+    }
+    .box{
+        float: none;
+        display: inline-block;
+        width: 40%;
+        margin-bottom: -4px;
+    }
+}
+

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            display: grid;
+            height: 100vh;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 100px repeat(3, 1fr);
+            grid-template-areas:
+                "header header header header"
+                "nav main main main"
+                "nav content-1 content-2 content-3"
+                "nav footer footer footer";
+        }
+
+        header {
+            background: lightblue;
+            grid-area: header;
+            justify-items: center;
+        }
+
+        aside {
+            background: palegreen;
+            grid-area: nav;
+            justify-items: center;
+        }
+
+        aside nav ul li {
+            list-style: none;
+            margin-top: .3rem;
+
+        }
+
+        aside nav ul li a {
+            color: black;
+            cursor: pointer;
+        }
+
+        main {
+            background: lightsalmon;
+            grid-area: main;
+            justify-items: center;
+        }
+
+        .content-1 {
+            background-color: aqua;
+            grid-area: content-1;
+            justify-items: center;
+        }
+
+        .content-2 {
+            background-color: palegoldenrod;
+            grid-area: content-2;
+            justify-items: center;
+        }
+
+        .content-3 {
+            background-color: palevioletred;
+            grid-area: content-3;
+            justify-items: center;
+        }
+
+        footer {
+            background-color: pink;
+            grid-area: footer;
+            justify-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h3>header content</h3>
+    </header>
+    <main>
+        <h3>main section content</h3>
+    </main>
+    <div class="content-1">
+        <h3>content 1</h3>
+    </div>
+    <div class="content-2">
+        <h3>content 2</h3>
+    </div>
+    <div class="content-3">
+        <h3>content 3</h3>
+    </div>
+    <aside>
+        <h3>navbar</h3>
+        <nav>
+            <ul>
+                <li><a href="">Item 1</a></li>
+                <li><a href="">Item 2</a></li>
+                <li><a href="">Item 3</a></li>
+                <li><a href="">Item 4</a></li>
+                <li><a href="">Item 5</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <footer>
+        <h3>footer content</h3>
+    </footer>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+//AJAX -  Asynchronous JavaScript and XML. É uma técnica que permite que páginas web se comuniquem com o servidor de forma assíncrona, sem precisar recarregar a página inteira.
+
+// Espera 2 segundos antes de iniciar a requisição AJAX
+setTimeout(() => {
+    // Cria um novo objeto de requisição AJAX
+    const request = new XMLHttpRequest();
+
+    // Configura a requisição:
+    // - Tipo: GET
+    // - URL: API pública que retorna um "to-do"
+    // - true = requisição assíncrona
+    request.open('GET', 'https://jsonplaceholder.typicode.com/todos/1', true);
+
+    // Função que será executada quando a resposta for recebida
+    request.onload = function () {
+        if (this.status >= 200 && this.status < 400) {
+            // Requisição bem-sucedida
+
+            // Converte a resposta JSON para objeto JS
+            const data = JSON.parse(this.response);
+
+            // Exibe os dados no console
+            console.log("Dados recebidos com sucesso:");
+            console.log(data);
+        } else {
+            // O servidor respondeu, mas com erro (ex: 404, 500)
+            console.error("Erro na resposta do servidor. Código:", this.status);
+        }
+    }
+
+    // Função que será chamada se houver erro de rede (sem internet, servidor fora do ar, etc.)
+    request.onerror = function () {
+        console.error("Erro de rede. Não foi possível concluir a requisição.");
+    }
+
+    // Envia a requisição
+    request.send();
+}, 2000);
+//Códigos de status de respostas HTTP
+
+/*
+1. Respostas Informativas (100 – 199)
+2.Respostas bem-sucedidas (200 – 299)
+3.Mensagens de redirecionamento (300 – 399)
+4.Respostas de erro do cliente (400 – 499)
+5.Respostas de erro do servidor (500 – 599)
+*/
+
+
+
+
+

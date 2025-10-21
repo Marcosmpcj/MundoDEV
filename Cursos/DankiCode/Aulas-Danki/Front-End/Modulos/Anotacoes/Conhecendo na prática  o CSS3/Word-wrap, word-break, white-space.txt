@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Word-wrap, word-break, white-space</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale: 1.0, maximum-scale: 1.0">
+    <link href="CSS/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, sunt at id quia debitis harum pariatur error doloribus, assumenda ab reprehenderit similique illum ipsam rem. Repellat perferendis aperiam voluptatibus aspernatur</p>
+    </div><!--box-->
+    
+</body>
+
+</html>
+
+//CSS
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    height: 100%;
+}
+
+.box{
+    width: 100%;
+    padding: 30px 2%;
+    background-color: rgb(220,220,220);
+}
+/*
+>word-wrap: break-word = quebrar linha da forma correta;
+
+>white-space: nowrap = nunca vai quebrar a linha;
+
+>white-space: pre = interpreta os espaços + quebra de linha diretamente do editor de código;
+
+>white-space: pre-line = interpreta apenas a quebra de linha e não os espaços;
+*/

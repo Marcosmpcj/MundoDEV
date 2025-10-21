@@ -1,0 +1,82 @@
+=> SITE PARA CRIAR BOX SHADOW " https://www.cssmatic.com/box-shadow "
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Opacidade e box-shadow</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale: 1.0, maximum-scale: 1.0">
+    <link href="CSS/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="box">
+        <img src="img/sunset.jpg">
+    </div><!--box-->
+
+</body>
+
+</html>
+
+//CSS
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    height: 100%;
+}/*para usar % no height em algum lugar do código,deve-se antes declarar no html,body*/
+
+/*
+div.box{
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+div.box img{
+    position: aboslute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+div.box p {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background: green;
+    opacity: 0.4;
+}
+*/
+
+div.box{
+    text-align: center;
+}
+div.box img{
+    width: 40%;
+    margin-top: 100px;
+    animation-name: animacao;
+    animation-duration: 5s;
+    animation-iteration-count: infite;
+    animation-delay: 3s;
+}
+
+@keyframes animacao{
+    from{.box img:hover{
+        box-shadow: 0 0 0 0 ;
+    }
+}
+    to{
+        box-shadow: 15px 15px 10px 10px rgb(130,130,130);
+    }
+}
+

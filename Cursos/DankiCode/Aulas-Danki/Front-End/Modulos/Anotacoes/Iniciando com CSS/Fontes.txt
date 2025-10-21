@@ -1,0 +1,60 @@
+CSS
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*ARTIGO */
+.artigo{
+    width: 1440px;
+    margin: 40px auto;
+    text-align: center;
+}
+.artigo h2{
+    color: rgb(66,149,244);
+    font-size: 23px;
+    font-style: italic;
+}
+.artigo2{
+    width: 1440px;
+    margin: 60px;
+    text-align: center;
+    background-color: aqua;
+    padding: 10px;
+
+}
+.artigo2 h2{
+    color: rgb(66,149,244);
+    font-style: italic; 
+    font-size: 30px;
+}
+.artigo2 p{
+
+}
+
+
+HTML
+
+<!DOCTYPE html>
+<html>
+<head> 
+<link href="css/teste1.css" rel="stylesheet">
+<title>Artigo</title>
+</head>
+<body>
+<div class="artigo">
+    <h2>Lorem Ipsum</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut nunc quam. Nunc venenatis justo nec ante lobortis ultrices egestas vel ex. Nulla a facilisis nisl. In suscipit placerat risus sit amet tristique. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer consequat auctor rhoncus. Phasellus vitae massa lacinia, vehicula ex in, dapibus augue. Quisque congue vel massa et maximus. Donec ut enim a lacus feugiat mollis vel quis nunc. Sed gravida ligula sed turpis tristique tempor. 
+    Aliquam erat volutpat.</p><!--EXEMPLO DE ARTIGO-->
+</div>
+<hr>
+<div class="artigo2">
+    <h2>Lorem Ipsum 2</h2>
+    <p>Maecenas efficitur, sem vitae vehicula euismod, neque nulla maximus massa, at eleifend orci justo in tortor. Phasellus tempus tempor nibh. Donec blandit imperdiet tristique. Nulla id libero felis. Aliquam finibus nulla quis leo rhoncus lobortis. Proin imperdiet neque porta, varius nulla nec, egestas purus. Morbi a tristique dolor, id faucibus libero.
+     Donec nunc leo, aliquet vel metus sodales, aliquam sollicitudin arcu.</p>
+
+</body>
+
+</html>

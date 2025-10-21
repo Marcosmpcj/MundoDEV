@@ -1,0 +1,41 @@
+
+//classes
+
+
+class Pessoa{
+    constructor(nome, idade, telefone) {
+        this.nome = nome;
+        this.idade = idade;
+        this.telefone = telefone;
+    }
+
+    apresentar() { //métodos
+        console.log(`Olá, meu nome é ${this.nome} e tenho ${this.idade} anos de idade. Contato para mais informações: ${this.telefone}.`)
+    }
+}
+
+let p1 = new Pessoa('Marcos', 23, '19 97152-0162')
+
+p1.apresentar()
+
+console.log("-------------------")
+
+class usuario extends Pessoa {
+    constructor(nome, idade, telefone, cargo, salario, endereco){
+        super(nome, idade, telefone)//chama o constructor da classe pai.
+        this.cargo = cargo;
+        this.salario = salario;
+        this.endereco = endereco;
+    }
+    apresentarUsuario() {
+        console.log(`Olá, meu nome é ${this.nome}. Com ${this.idade} anos de idade, pude me tornar ${this.cargo} da empresa com um salário de ${this.salario}.`)
+    }
+}
+
+p2 = new usuario('Carlos', 35, '11 99876-5432', 'Gerente', 10000, 'Rua E40 nº 4')
+
+p2.apresentarUsuario()
+
+
+
+

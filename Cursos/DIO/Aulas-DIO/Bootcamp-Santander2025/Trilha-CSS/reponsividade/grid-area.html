@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsividade - Grid Layout</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            display: grid;
+            height: 100vh;
+            grid-template-columns: 150px 1fr;
+            grid-template-rows: 100px 3fr 1fr;
+            grid-template-areas:
+                "logo navbar"
+                "sidebar main"
+                "footer footer";
+        }
+
+        .logo {
+            grid-area: logo;
+        }
+
+        nav {
+            background: yellow;
+            grid-area: navbar;
+        }
+
+        main {
+            background: palegreen;
+            grid-area: main;
+        }
+
+        aside {
+            background: palevioletred;
+            grid-area: sidebar;
+        }
+
+        footer {
+            background: blue;
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+    <figure class="logo">
+        <img src="https://img.cdndsgni.com/preview/11554998.jpg" width="100">
+    </figure>
+    <nav>navbar</nav>
+    <main>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quas praesentium quod harum, recusandae iusto dolores amet minima
+            mollitia blanditiis nobis nisi expedita, voluptatibus eum quidem! Quasi iure doloremque vel.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quas praesentium quod harum, recusandae iusto dolores amet minima
+            mollitia blanditiis nobis nisi expedita, voluptatibus eum quidem! Quasi iure doloremque vel.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quas praesentium quod harum, recusandae iusto dolores amet minima
+            mollitia blanditiis nobis nisi expedita, voluptatibus eum quidem! Quasi iure doloremque vel.</p>
+
+    </main>
+    <aside>sidebar</aside>
+    <footer>todos os direitos reservados</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+
+//Objetos = é uma coleção de pares chave-valor que representa uma entidade com propriedades e comportamentos.
+
+const meuInfo = {
+    nome: 'Marcos',
+    idade: '23',
+    profissao: 'programador'
+}
+
+console.log(meuInfo.nome)
+console.log(meuInfo.idade)
+console.log(meuInfo.profissao)
+
+console.log("----------------")
+
+const infoGeral = [{
+    nome: 'Alex',
+    idade: '42',
+    profissao: 'Bombeiro'
+},
+{
+    nome: 'Murillo',
+    idade: '22',
+    profissao: 'controlador de trafego'
+},
+{
+    nome: 'Anna',
+    idade: '23',
+    profissao: 'Enfermeira'
+}]
+
+console.log(infoGeral[2].nome)
+console.log(infoGeral[2].idade)
+console.log(infoGeral[2].profissao)
+
+console.log("-------------------")
+
+//Exemplo_2
+
+function Usuario(nome, idade, cargo) {
+    this.nome = nome;
+    this.idade = idade;
+    this.cargo = cargo;
+    this.apresentar = function () {
+        console.log(`Saudações, meu nome é ${this.nome}, tenho ${this.idade} anos de idade e atualmente sou ${this.cargo} da empresa.`)
+    }
+}
+
+let estagiario_1 = new Usuario('Felippe','25','Gerente Financeiro')
+
+estagiario_1.apresentar()
+
+    
+

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="css/style.css" rel="stylesheet">
+    <title>Propriedade Position</title>
+</head>
+<body>
+    <!--
+    <h1>Tabela de Aprendizagem</h1>
+    <table>
+        <tr class="header">
+            <td>Nome</td>
+            <td>Idade</td>
+        </tr>
+        <tr>
+            <td>Guilherme</td>
+            <td>23</td>
+        </tr>
+        <tr>
+            <td>Marcos</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>Eline</td>
+            <td>24</td>
+        </tr>
+    </table>-->
+
+    <div class="menu-fixed">
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Sobre</li>
+                <li>Serviços</li>
+                <li>Contatos</li>
+
+            </ul>
+
+        </nav>
+
+    </div><!--menu-->
+    
+    <div class="box">
+
+      <h1>Meu Website</h1>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc magna urna, ornare non tortor a, ultrices ullamcorper augue. Cras non lectus eget mauris auctor luctus a nec ligula. Integer bibendum augue eget urna egestas, non rutrum justo cursus. Etiam iaculis nunc sed volutpat scelerisque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus sodales efficitur molestie. Ut quis odio pretium, semper turpis sit amet, bibendum mauris. Nunc cursus dolor vel odio dignissim, sed elementum purus lacinia. Fusce sit amet dignissim eros, in elementum dui. Nullam dignissim, leo eu imperdiet sodales, dolor lectus lobortis nisi, vel congue velit mi quis lacus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla ut mollis elit. Mauris commodo ex eu consequat vehicula. Proin nec hendrerit neque. Morbi et quam at tellus facilisis tempor.</p>
+
+    </div><!--box-->
+
+ 
+</body>
+
+</html> 
+
+//CSS
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+/*
+table{
+    width: 900px;
+    margin: 0 auto;
+    border-collapse: collapse;>POR PADRÃO, AS BORDAS
+    POSSUEM ESPAÇAMENTO, AO ATRIBUIR ESSE COD DIZEMOS 
+    PARA AS BORDAS COLIDIREM(SEM ESPAÇAMENTOS)
+    background-color: rgb(200,200,200);
+}
+table tr td {
+    border: 1px black solid;
+    height: 100px;
+    text-align: center;
+    font-size: 17px;
+}
+.header td{
+    font-weight: bolder;
+    font-size: 25px;
+}
+h1{
+    text-align: center;
+    margin: 30px;    
+}
+*/
+
+
+.menu-fixed {
+    width: 100%;
+    height: 80px;
+    background-color: #069;
+    position: fixed;
+    top: 0;/*COLA O MENU NO LADO SUPERIOR DA TELA*/
+    left: 0;/*COLA O MENU DO LADO ESQUERDO DA TELA*/
+    display: flex;
+    align-items: center;/*CENTRALIZA OS ITENS VERTICALMENTE*/
+    justify-content: center;/*CENTRALIZA OS ITENS HORIZONTALMENTE*/
+    z-index: 1000; /*MANTÉM O MENU SEMPRE ACIMA DOS OUTROS ELEMENTOS*/
+}
+.menu-fixed ul {
+    display: flex;/*FLEXIBILIZA O USO DOS RECURSOS PARA MANIPULAR 
+    AS DIMENSÕES DO DISPLAY*/
+    list-style: none;
+}
+.menu-fixed li {
+    margin: 0 15px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px 15px;
+}
+.menu-fixed li:hover { /*SELETOR DO MOUSE*/
+    background-color: rgb(3, 43, 62);
+    border-radius:5px; /*BORDA ARREDONDADA*/
+}
+.box {
+    background-color: rgb(3, 43, 62);;
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 100px; /* Adiciona espaço para não ficar coberto */
+    text-align: justify ;
+}
+.box h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.box p {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height:1.8;/*AUMENTA A DISTÂNCIA ENTRE AS LINHAS*/
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<htmL>
+<head>
+    <link href="css/style.css" rel="stylesheet">
+    <title>Espaçamento entre letras/Letter-Spacing</title>
+</head>
+<body>
+    <h1>CSS é incrível</h1>
+   
+    
+</body>
+
+</htmL> 
+
+//CSS
+
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    letter-spacing: 2px;/*USADO PARA DAR ESPAÇAMENTOS ENTRE
+    AS LETRAS*/
+    text-align: center;
+}
+h1:hover{
+    letter-spacing: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

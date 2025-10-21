@@ -1,0 +1,117 @@
+#ALGORITMOS = RECEITA/PASSO A PASSO DE UM PROGRAMA
+
+=>Write an algorithm to add two numbers entered by user.
+
+step 1: start.
+step 2: declare variableas num1, num2 and sum.
+step 3: read values num1 and num2.
+step 4: add num1 and num2 and assign the result to sum.
+		num1 + num2 = sum
+step 5: display sum.
+step 6: stop.
+__________________________________________________________________________________________
+
+=>Write an algorithm to find the largest among differents numbers entered by user.
+
+step 1: start.
+step 2: declare variables a, b and c.
+step 3: read viriables a, b and c.
+step 4: if a>b
+		if a>c
+			display a is the largest number
+		else
+			display c is the largest number
+		else
+			if b>c
+				display b is the largest number
+			else
+				display c is the largest number
+step 5: stop.
+__________________________________________________________________________________________
+
+=> Quando comprar um ingresso de cinema, quero validar o momento que alguém for entrar. Sem restrições!
+
+INICIAR ALGORITMO
+
+	declarar var : horarioFilme , horarioAtual
+
+	SE horarioAtual >= horarioFilme
+		--podemos entrar--
+	FIM SE 
+
+	CASO CONTRARIO
+		--vamos esperar--
+	
+FINALIZAR ALGORITMO
+
+__________________________________________________________________________________________
+
+=> Quando comprar um ingresso de cinema, quero validar o momento que alguém for entrar. Com restrições!
+
+INICIAR ALGORITMO
+
+	declarar var : horarioFilme , horarioAtual
+
+	SE horarioAtual >= horarioFilme && horarioAtual <= horarioFilme + 30min
+		--podemos entrar--
+	FIM SE 
+
+	CASO CONTRARIO
+		--vamos esperar--
+	
+FINALIZAR ALGORITMO
+
+__________________________________________________________________________________________
+
+=> Cáculo de idade.
+
+INICIAR ALGORITMO
+	
+	declarar var: anoNascimento , anoAtual
+
+	mostrar na tela: "Minha idade é: " = anoAtual - anoNascimento
+
+FINALIZAR ALGORITMO
+
+__________________________________________________________________________________________
+algoritmo "calculoIdade"
+var
+anoAtual,anoNascimento,idade: inteiro
+
+inicio
+escreva("Em que ano nós estamos? ")
+leia(anoAtual)
+escreva("Em que ano você nasceu? ")
+leia(anoNascimento)
+
+idade <- anoAtual - anoNascimento
+
+escreva("Sua idade é de ", idade ," anos ")
+
+fimalgoritmo
+__________________________________________________________________________________________
+algoritmo "Real_Dolar"
+var
+reais,dolares:real
+
+inicio
+escreva("Quantos reais eu tenho?")
+leia(reais)
+
+dolares <- reais/5.76
+
+escreva("Eu tenho U$",dolares)
+
+fimalgoritmo
+__________________________________________________________________________________________
+
+
+
+
+
+
+
+
+
+
+

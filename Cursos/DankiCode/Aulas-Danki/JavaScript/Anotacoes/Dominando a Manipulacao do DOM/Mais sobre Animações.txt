@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Javascript</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/assets/css/global.css" rel="stylesheet">
+    <script src="/assets/js/global.js" defer></script>
+
+</head>
+
+<body>
+    <style>
+        .conteudo h2 span {
+            font-size: 13px;
+            cursor: pointer;
+        }
+
+        .conteudo p {
+            overflow: hidden;
+            height: 0;
+            transition: 1s;
+        }
+        .mostrar{
+            height: auto !important;
+            transition: 1s;
+        }
+    </style>
+
+    <div class="conteudo">
+        <h2>Título do conteúdo <span>Ver mais!</span></h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nostrum consequatur cupiditate dolore? Eaque blanditiis impedit
+            nemo pariatur cum aliquam. Dolorum non quod reiciendis recusandae praesentium at tempore cumque facere.</p>
+    </div>
+
+
+
+
+    <script>
+        //Mais sobre Animações
+
+        /*
+        document.querySelector('.conteudo span').addEventListener('click', ()=>{
+            document.querySelector('.conteudo p').classList.toggle('mostrar')
+        }); //ligar/desligar
+        */
+
+        let span = document.querySelector('.conteudo span');
+
+        span.addEventListener('click', ()=>{
+            let conteudo =document.querySelector('.conteudo p')
+
+            if(conteudo.classList.contains('mostrar')){
+                span.innerHTML = 'Ver mais!'
+                conteudo.classList.remove('mostrar')
+            }else{
+                span.innerHTML = 'ocultar'
+                conteudo.classList.add('mostrar')             
+            }
+        }); 
+
+
+
+
+
+    </script>
+</body>
+
+</html>

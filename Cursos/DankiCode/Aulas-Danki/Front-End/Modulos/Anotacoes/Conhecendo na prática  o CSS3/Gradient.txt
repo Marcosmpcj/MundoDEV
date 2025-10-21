@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Gradient</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale: 1.0, maximum-scale: 1.0">
+    <link href="CSS/style.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="box"></div>
+
+</body>
+
+</html>
+
+//CSS
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    height: 100%;
+}
+
+.box{
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(to bottom right, red,orange,purple,green)
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<link href="css/teste1.css" rel="stylesheet">
+<title>Limitando as Dimensões</title>
+</head>
+<body>
+    <div class="header">
+
+    </div><!--header-->
+    <div class="article">
+
+    </div><!--article-->
+
+    
+</body>
+
+</html>
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+} /*Para manipular 100% do height no CSS*/
+
+/*Limitando as Dimensões*/
+
+.header{
+    height: 150px;
+    width: 100%;
+    background-color: rgb(10, 76, 174);
+    min-width: 1280px;/*Usado quando se estabelece pixels 
+    e porcentagens e umas das divs fica desproporcional. A soloção é 
+    usar o recurso "min-width". Usa-se esse mesmo conceito para 
+    "min-height" para equilibrar as dimensões das alturas*/
+
+
+}
+.article{
+    height: 600px;
+    width: 1280px;
+    background-color: rgb(143, 143, 143);
+    margin: 0 auto;
+
+}

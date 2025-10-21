@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--importado do google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+    <title>Tudo sobre Fontes</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        @font-face {
+            font-family: "Sigmar";
+            src: url('../fonts/Sigmar-Regular.ttf');
+        }
+
+        /*importar fonte baixada no diretório*/
+
+        div h2 {
+            font-family: 'Sigmar';
+        }
+
+
+        .box p {
+            font-family: "Open Sans";
+        }
+
+        .text {
+            font-family: tohoma;
+        }
+
+        /*não importa a fonte tahoma, pois o nível de especificação do (.box p) é maior*/
+        .text {
+            font-family: tohoma !important;
+        }
+
+        /*(!important) é usado para sobrepor qualquer nível de especificação superior*/
+
+
+        form * {
+            font-family: 'Sigmar';
+        }
+
+        /*(*)ao colocar isso, atacamos a fonte de tood nosso formulário*/
+    </style>
+
+</head>
+
+<body>
+    <div class="box">
+        <h2>Teste de Fostes!</h2>
+        <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia animi similique quam eos. Vitae,
+            laudantium? Sint maxime porro voluptatibus quasi et debitis temporibus iure magni ipsum. Voluptate inventore
+            veritatis velit.</p>
+    </div><br>
+    <hr>
+
+    <form action="">
+        <div>
+            <input type="text">
+        </div>
+    </form>
+
+
+
+</body>
+
+</html>

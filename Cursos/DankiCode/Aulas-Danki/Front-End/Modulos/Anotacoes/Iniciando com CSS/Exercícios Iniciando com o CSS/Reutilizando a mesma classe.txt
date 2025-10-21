@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<htmL>
+<head>
+    <link href="css/style.css" rel="stylesheet">
+    <title>Reutilizando a mesma classe</title>
+</head>
+<body>
+    <div class="box">
+    <button class="botao">Enviar</button>
+    <button class="botao">Cancelar</button>
+    <button class="botao">voltar</button>
+    </div>
+
+</body>
+
+</htmL> 
+
+//CSS
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.botao{
+    font-size: 23px;
+    background-color: rgb(8, 8, 110);
+    color: white;
+    border: 2px rgb(255, 255, 255) solid;
+    border-radius: 25px 50px;
+    padding: 10px 20px;
+    margin: 20px 10px;
+    cursor: pointer;
+    
+}
+ .box{
+    margin: 0 auto;
+    width: 100%;
+    background-color: rgb(8,8,110);
+    text-align: center;
+ }
+ .botao:hover{ 
+    background-color: red;
+ }/*MODIFICADO AO PASSAR O MOUSE POR CIMA*/
+

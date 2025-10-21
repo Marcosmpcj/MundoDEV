@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Javascript</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/assets/css/global.css" rel="stylesheet">
+    <script src="/assets/js/global.js" defer></script>
+
+</head>
+
+<body>
+    <style>
+        .box {
+            margin-left: 0;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+
+        .animEsquerda {
+            transition: 1s;
+            margin-left: 100px;
+            margin-top: 100px;
+        }
+    </style>
+
+    <div class="box"></div>
+
+
+
+
+    <script>
+        //Animações com Javascript
+
+        let box = document.querySelectorAll('.box')[0];
+
+        /*
+        setTimeout(()=>{
+            box.classList.add('animEsquerda');
+        },1000);
+        */
+
+        box.addEventListener('click',()=>{
+            box.classList.add('animEsquerda');
+        })
+
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+//programa calculo preço etiqueta
+
+let valorInicial = parseFloat(prompt("Digite o valor do produto"));
+let pagamentoEscolhido = prompt("Escolha a forma de pagamento: debito, credito, dinheiro ou pix?").toLowerCase()
+let condicaoPagamento = ["debito", "credito", "dinheiro", "pix"]
+//let parcelamento = parseInt(prompt("Digite em quantas vezes"))
+let parcelamento = 1
+
+let valorFinal
+/*
+if (parcelamento === 1 && condicaoPagamento.includes(pagamentoEscolhido) && "debito".includes(pagamentoEscolhido)) {
+    valorFinal = valorInicial * 0.9
+    console.log(`O subtotal é de R$ ${valorFinal.toFixed(2)} reais`)
+} else if (parcelamento === 1 && condicaoPagamento.includes(pagamentoEscolhido) && ["dinheiro", "pix"].includes(pagamentoEscolhido)) {
+    valorFinal = valorInicial * 0.85
+    console.log(`O subtotal é de R$ ${valorFinal.toFixed(2)} reais`)
+} else if (parcelamento === 2 && condicaoPagamento.includes(pagamentoEscolhido) && "credito".includes(pagamentoEscolhido)) {
+    valorFinal = valorInicial
+    console.log(`O subtotal é de R$ ${valorFinal.toFixed(2)} reais em ${parcelamento} vezes de ${valorFinal / parcelamento} reais sem juros no ${pagamentoEscolhido}`)
+} else if (parcelamento > 2 && condicaoPagamento.includes(pagamentoEscolhido) && "credito".includes(pagamentoEscolhido)) {
+    valorFinal = valorInicial * 1.1
+    console.log(`O subtotal é de R$ ${valorFinal.toFixed(2)} reais em ${parcelamento} vezes de ${valorFinal / parcelamento} reais com juros de 10% no ${pagamentoEscolhido}`)
+} else {
+    console.log("forma de pagamento inválida")
+}

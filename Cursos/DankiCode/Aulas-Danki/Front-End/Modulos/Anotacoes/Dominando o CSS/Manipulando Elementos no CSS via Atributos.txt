@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<htmL>
+<head>
+    <link href="css/style.css" rel="stylesheet">
+    <title>Manipulando Elementos no CSS via Atributos</title>
+</head>
+<body>
+   
+ <a href="http://www.google.com">Meu link para o google></a>
+ <br>
+ <a href="http://www.dankicode.com">Meu link para a danki></a>
+
+ <hr>
+
+<form>
+    <input type="text">
+    <input type="submit">
+
+</form>
+ 
+</body>
+
+</htmL> 
+
+//CSS
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+}
+
+a[href]{
+    background-color: yellow;
+}/*SINTAXE PARA ATACAR TODOS OS LINKS COM ATRIBUTO HREF*/
+a[href="http://www.google.com"]{
+    background-color: grey;
+}/*SENDO MAIS ESPECÍFICO DE QUAL ATRIBUTO ATACAR SEM COLOCAR CLASS*/
+a[href*="google"]{
+    background-color: chartreuse;
+}/* (A[HREF*="GOOGLE"]) VAI ATAVAR TODOS OS LINKS QUE TENHA A 
+PALAVRA GOOGLE*/
+
+
+input{
+    background-color: yellow;
+}/*ATAQUEI TODOS OS INPUTS*/
+input[type=text]{
+    background-color: green;
+}/*FUI MAIS ESPECÍFICO NO ATRIBUTO QUE QUERIA ATACAR*/
+
+
+

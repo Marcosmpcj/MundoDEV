@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<htmL>
+<head>
+    <link href="css/style.css" rel="stylesheet">
+    <title>Criando e usando IDs e classes</title>
+</head>
+<body>
+   <h1 id="header">Título da Header</h1>
+   <p class="destaque">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pellentesque euismod sapien sed mattis. Fusce lacus lectus, ultricies vitae pellentesque non, maximus id arcu. Vestibulum pharetra enim metus, ut euismod nisi ultricies sed. Curabitur tristique ipsum imperdiet justo cursus lacinia. Nunc ut ipsum sed lorem rutrum faucibus. Vivamus mattis nulla neque, sit amet semper urna imperdiet vitae. Aliquam in lectus gravida, rutrum massa vel, faucibus ante. Phasellus placerat finibus massa, ac tempor felis convallis et. Curabitur interdum neque tincidunt ligula interdum consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac urna nibh. 
+    In at mauris condimentum, bibendum orci eu, maximus tellus.</p>
+
+    
+</body>
+
+</htmL> 
+
+//CSS
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(107, 33, 175);
+}
+html,body{
+    height: 100%;
+}
+/*Criando e usando IDs e classes*/
+
+#header{
+    background-color: rgb(26, 191, 26);
+    color: white;
+}
+.destaque{
+    color: yellow;
+    font-weight: bold;
+}

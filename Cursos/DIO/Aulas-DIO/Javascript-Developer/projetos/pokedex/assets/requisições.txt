@@ -1,0 +1,16 @@
+Requisição HTTP
+
+    URL: https://pokeapi.co/api/v2/pokemon?offset=1&limit=10
+        ${Endereço - IP}/${path - caminho de identificação do recurso}?{chave=valor} =  ${https://pokeapi.co}/${api/v2/pokemon}? {offset=1&limit=10} 
+    Query String: após o "?", colocamos chave/valor para uma busca mais precisa. 
+
+    Request Method: GET(busca) | POST(adiciona) | PUT(atualiza) | DELETE(exclui) ....
+
+    Request Headers:
+        Configuração da requisição; Autententicação, etc.
+
+    Response Headers:
+        Configuração da resposta
+
+    Body: corpo/dados da requisição, dependendo no método utilizado.
+

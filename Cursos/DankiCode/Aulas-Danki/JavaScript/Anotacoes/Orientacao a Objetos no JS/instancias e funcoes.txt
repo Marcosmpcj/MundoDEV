@@ -1,0 +1,16 @@
+
+//Funções e Instâncias 
+
+function Pessoa(nome, idade) {
+    this.nome = nome;
+    this.idade = idade;
+    this.apresentar = function () {
+        console.log(`Olá, meu nome é ${nome} e eu tenho ${idade} anos de idade.`)
+    }
+}
+
+let p1 = new Pessoa('Marcos', 23)
+p1.apresentar()
+
+let p2 = new Pessoa('Anna', 24)
+p2.apresentar()

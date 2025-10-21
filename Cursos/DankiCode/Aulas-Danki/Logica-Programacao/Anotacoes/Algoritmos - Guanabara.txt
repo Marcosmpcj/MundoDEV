@@ -1,0 +1,71 @@
+#CORPO DO ALGORTIMO:
+
+algoritmo "nomeAlgoritmo"
+var
+
+inicio
+
+fimalgoritmo
+
+------------------------------------------------------------------------------------------
+#COMANDOS DE SAIDA:
+
+>escreva("qualquer coisa")
+>escreval("qualquer coisa") - pula de linha 
+>escreva("msg") - escreve a cadeia de caracteres msg.
+>escreva(msg) - escreve o conteúdo da var msg, se esta for declarada e inicializada.
+>escreva("Mensagem: ", msg) - escreve a cadeira de caracteres seguida do conteúdo da var msg.
+
+
+#VARIÁVEIS:
+
+var
+  identificador:tipo
+
+#IDENTIFICADORES: identificam determinadas variáveis.
+
+1.deve começar com uma letra.
+2.os próximos poder ser letras ou números.
+3.não pode utilizar nenhum símbolo, exceto _.
+4.não pode conter espaços em branco.
+5.não pode conter letras com acentuação.
+6.não pode ser uma palavra reservada.
+
+#TIPOS PRIMITIVOS:
+
+1.inteiro = permite apenas n° inteiros.
+2.real = permite n° reais.
+3.caractere = tudo que é colocado entre aspas.
+4.lógico = verdadeiro/falso.
+
+#ATRIBUIÇÕES: quer dizer "recebe"
+
+ex_  var
+       msg: caractere
+
+
+       msg <- "Olá, mundo!" ==> a var msg recebe o caractere "Olá, mundo!"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

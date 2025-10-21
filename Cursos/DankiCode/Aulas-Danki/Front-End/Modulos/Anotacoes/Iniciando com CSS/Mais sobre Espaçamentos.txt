@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<htmL>
+<head>
+    <link href="css/style.css" rel="stylesheet">
+    <title>Mais sobre Espaçamentos</title>
+
+</htmL>
+<body>
+    <div class="center">
+        <div class="artigo">
+    <h1>Meu Artigo</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque libero nisi, tempus quis dui ut, consectetur volutpat mi. Nullam eget pellentesque ipsum, eu sollicitudin erat. Phasellus ipsum nibh, semper eget sapien sed, aliquam pellentesque elit. Duis placerat ante sed tellus tempus fermentum. Fusce interdum erat at est facilisis, et tempor sapien volutpat. Mauris mauris nunc, elementum et diam ac, finibus sagittis lorem. Vestibulum ut rutrum lacus. In malesuada lacus at orci condimentum, eu congue diam viverra. Phasellus iaculis leo vel dictum auctor. In consequat vestibulum nisl, congue hendrerit elit tincidunt eget. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+    Donec dui augue, placerat vitae porttitor a, accumsan quis nisl.</p>
+    <h1>Meu Artigo</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque libero nisi, tempus quis dui ut, consectetur volutpat mi. Nullam eget pellentesque ipsum, eu sollicitudin erat. Phasellus ipsum nibh, semper eget sapien sed, aliquam pellentesque elit. Duis placerat ante sed tellus tempus fermentum. Fusce interdum erat at est facilisis, et tempor sapien volutpat. Mauris mauris nunc, elementum et diam ac, finibus sagittis lorem. Vestibulum ut rutrum lacus. In malesuada lacus at orci condimentum, eu congue diam viverra. Phasellus iaculis leo vel dictum auctor. In consequat vestibulum nisl, congue hendrerit elit tincidunt eget. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+    Donec dui augue, placerat vitae porttitor a, accumsan quis nisl.</p>
+        </div><!--artigo-->
+    </div><!--center-->
+
+</body>
+
+</htmL>
+
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+html,body{
+    height: 100%;
+}
+
+/*Mais sobre Espaçamentos*/
+
+.center{
+    /*box-sizing: border-box; utiltizado para manter o
+    espaçamento dentro da box*/ 
+    width: 1280px;
+    margin: 0 auto;
+    background-color: rgb(152, 152, 152);
+   
+    
+}
+.artigo{
+   width: 1280px;
+   margin-top: 50px;
+}

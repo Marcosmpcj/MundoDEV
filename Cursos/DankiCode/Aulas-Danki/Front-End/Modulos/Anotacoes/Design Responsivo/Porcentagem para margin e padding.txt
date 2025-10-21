@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link href="css/style.css" rel="stylesheet">
+        <title>Porcentagem para margin e padding</title>
+    </head>
+    <body>
+
+        <div class="parent">
+            <div class="box">
+            </div><!--box-->
+        </div><!--parente-->
+        
+    </body>
+</html>
+
+//CSS
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.parent{
+    width: 50%;
+    height: 400px;
+    background-color: orange;
+}
+
+.box{
+    width: 50%;
+    padding-top: 25%;
+    background-color: grey;
+}
+
+/*
+=>Quando usamos o weight/height/margin em %, sempre vai herdar a % do 
+elemento pai.Ou seja, sempre em referência ao elemento pai;
+*/

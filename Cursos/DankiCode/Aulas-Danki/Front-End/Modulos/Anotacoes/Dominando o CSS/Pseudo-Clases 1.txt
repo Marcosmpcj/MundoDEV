@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="css/style.css" rel="stylesheet">
+    <title>Pseudo-Clases</title>
+</head>
+<body>
+    <div class="teste"></div>
+    <div class="teste1"></div>
+    <div class="teste2"></div><br>
+    <hr>
+    <div class="container">
+    <a class="link1" href="http://www.google.com" target="_black" >Meu Link!</a>
+    </div><!--container-->
+
+</body>
+
+</html> 
+
+//CSS
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    
+html, body {
+    height: 100%;
+}
+
+.teste,.teste1,.teste2{
+    width: 300px;
+    height: 300px;
+    background-color:#ccc ;
+    margin-top: 30px;
+    margin-left: 30px;
+    display: inline-block;
+
+}
+.teste1{
+    background-color: rgb(98,98,98);
+}
+.teste2{
+    background-color: rgb(50,50,50);
+}
+.teste:hover{ 
+    background-color: blue;
+    height: 900px;
+}
+.teste:hover, .teste1,teste2{
+    vertical-align: top;
+}
+.container{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.link1{
+    font-size:30px;
+}
+/*
+PSEUDO-CLASSES:
+>hover= altera as características do elemento ao passar o mouse
+por cima;
+>active= altera as características do elemento ao ficar precionando
+o mouse por cima;
+>focus= (para formulários) quando clicamos damos foco ao elemento do 
+do nosso formulário;
+*/
+

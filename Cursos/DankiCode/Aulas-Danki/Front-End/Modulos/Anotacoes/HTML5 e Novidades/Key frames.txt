@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Key frames</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale: 1.0, maximum-scale: 1.0">
+    <link href="CSS/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="box"></div><!--box-->
+
+</body>
+
+</html>
+
+//CSS
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    height: 100%;
+}/*para usar % no height em algum lugar do código,deve-se antes declarar no html,body*/
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    position: relative;
+    animation-name: animacao_1;
+    animation-duration: 5s;
+    animation-delay: 2s; /* tempo de espera antes de começar a animação */
+    animation-iteration-count: infinite; /* repetições */
+    /*animation: animation_1 5s infinite ; = FORMA DE ESCREVER NA MESMA LINHA*/
+}
+
+@keyframes animacao_1{
+    /*
+    from{
+        background-color: green;
+    }
+    to{
+        background-color: red;
+    }
+    */
+    0%{
+        background-color: green;
+        left: 0;
+        top: 0;
+    }
+    25%{
+        background-color: yellow;
+        left: 200px;
+        top: 0;
+    }
+    50%{
+        background-color: blueviolet;
+        left: 200px;
+        top: 200px;
+    }
+    75%{
+        background-color: blue;
+        left: 0;
+        top: 200px;
+    }
+    100%{
+        background-color: red;
+        left: 0;
+        top: 0;
+    }
+}

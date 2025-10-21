@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<htmL>
+<head>
+    <link href="css/style.css" rel="stylesheet">
+    <title>Utilizar Float e as Vantagens</title>
+
+</htmL>
+<body>
+    
+    <div class="pai">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div style="clear: both;"></div><!--A DIV PAI NÃO CALCULA OS 
+        ESPAÇAMENTOS QUANDO SE USA O FLOAT//PARA CORRIGIR O PROBLEMA 
+        DE A DIV PAI NÃO ACOMPANHARO POSICIONAMENTO DA DIV FILHO-->
+    </div><!--pai-->
+
+</body>
+
+</htmL> 
+
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+html,body{
+    height: 100%;
+}
+
+/*Utilizar Float e as Vantagens*/
+
+.pai{
+    background-color: blue;
+    width: 1280px;
+    padding: 20px 0px;
+    margin: 0 auto;
+}
+.child{
+    background-color: red;
+    width: 640px;
+    height: 300px;
+    /*display: inline-block;
+    margin-right: -4px; CORRIGIR O POSICIONAMENTO EM LINHA*/
+    float: left;
+    border: 1px black solid;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+    padding: 130px ;
+    color: white;
+}
+
+
+
+

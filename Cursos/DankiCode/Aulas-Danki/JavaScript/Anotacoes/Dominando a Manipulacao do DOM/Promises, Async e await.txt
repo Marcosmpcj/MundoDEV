@@ -1,0 +1,33 @@
+//Promises, Async e await
+
+
+//Promise - representa uma operação assíncrona que ainda não terminou, mas que vai resultar em um valor no futuro — seja com sucesso ou erro. Pode estar em dois estados:
+//Pendente(pending) - ainda está processando;
+//Resolvida(fulfilled) - deu certo;
+//Rejeitada(rejected) - deu errado;
+
+function testes() {
+    return new Promise((resolve, reject) => {
+        const erro = false;
+
+        if (erro) {
+            reject('Erro encontrado!');
+        } else {
+            resolve('A promisse foi resolvida com sucesso!');
+        }
+    })
+}
+
+testes()
+    .then((resultado) => {
+    alert(resultado); //then - se der certo;
+    })
+    .catch((erro) => {
+        alert(erro); //catch - se der errado;
+    })
+
+//Função Assíncrona - é uma função que não executa tudo de uma vez, .mas sim espera certa partes terminarem antes de continuar
+
+async function testes2() {
+    alert('Olá')
+}

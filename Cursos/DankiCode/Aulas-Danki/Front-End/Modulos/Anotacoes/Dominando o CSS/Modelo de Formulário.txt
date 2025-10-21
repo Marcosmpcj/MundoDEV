@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            width: auto;
+            margin-right: 5px;
+        }
+        .radio-group, .checkbox-group {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Formulário de Contato</h2>
+        <form id="contactForm">
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+            
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+            
+            <label for="age">Qual sua idade?</label>
+            <select id="age" name="age" required>
+                <option value="" disabled selected>Selecione</option>
+                <option value="20">20</option>
+                <option value="25+">25+</option>
+                <option value="40+">40+</option>
+            </select>
+            
+            <label>Cidade</label>
+            <div class="radio-group">
+                <label><input type="radio" name="city" value="Florianópolis" required> Florianópolis</label>
+                <label><input type="radio" name="city" value="Rio de Janeiro"> Rio de Janeiro</label>
+                <label><input type="radio" name="city" value="São Paulo"> São Paulo</label>
+            </div>
+            
+            <label>O que você gosta de comer?</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="food" value="Fruta"> Fruta</label>
+                <label><input type="checkbox" name="food" value="Fast Food"> Fast Food</label>
+                <label><input type="checkbox" name="food" value="Salada"> Salada</label>
+            </div>
+            
+            <label for="message">Observações</label>
+            <textarea id="message" name="message" rows="4" placeholder="Digite sua observação"></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Formulário enviado com sucesso!');
+        });
+    </script>
+</body>
+</html>

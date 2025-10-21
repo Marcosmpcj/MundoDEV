@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<link href="css/teste1.css" rel="stylesheet">
+<title>Listas e Níveis de Importância</title>
+</head>
+<body>
+    <ul class="lista">
+        <li>Produto 1</li>
+        <li>Produto 2</li>
+        <li class="item3">Produto 3</li>
+        <li>Produto 4</li>
+    </ul><!--lista-->
+    
+    <hr>
+
+    <ul class="lista2">
+        <li>Produto 5</li>
+        <li>Produto 6</li>
+        <li class="item3">Produto 7</li>
+        <li>Produto 8</li>
+    </ul><!--lista2-->
+
+    <hr>
+
+    <ul class="lista3">
+        <li>Produto 9</li>
+        <li>Produto 10</li>
+        <li class="item3">Produto 11</li>
+        <li>Produto 12</li>
+    </ul>
+
+    <hr>
+
+    <ol>
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+    </ol>
+
+    <hr>
+
+    <div class="um">
+        <div class="dois">
+
+        </div><!--dois-->
+
+        <div class="tres">
+            <div class="quatro">
+            </div><!--quatro-->
+        </div><!--tres-->
+    </div><!--um-->
+
+
+</body>
+
+</html>
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+} /*Para manipular 100% do height no CSS*/
+
+/*Listas e Níveis de Importância */
+
+.lista,.lista2,.lista3{
+    list-style-position: inside;
+    list-style-type:circle;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.lista li,.lista2 li,.lista3 li{
+    color: rgb(207, 0, 0);
+    font-size: 17px;
+    margin-top: 10px;  
+}
+.lista .item3,.lista2 .item3,.lista3 .item3{
+    color: blue;
+    font-weight: bold;
+}/*Essa foi o tipo de lista sem ordem*/
+
+ol{
+    list-style-position: inside;
+}
+
+ol > li{
+    color: green;
+    margin-left: 20px ;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+/*Entendendo sobre o grau de importância do >*/
+
+.um{
+    width: 500px;
+    height: 500px;
+    background-color: red;
+}
+.um > .dois{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+}
+.um > .tres{
+    width: 200px;
+    height: 200px;
+    background-color: green;
+}
+.um> .tres>.quatro{
+    width: 100px;
+    height: 100px;
+    background-color: grey;    
+}

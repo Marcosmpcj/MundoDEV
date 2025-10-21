@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<htmL>
+<head>
+    <link href="css/style.css" rel="stylesheet">
+    <title>Menu Horizontal</title>
+</head>
+<body>
+    <ul class="menu">
+        <li>Home</li>
+        <li>Sobre</li>
+        <li>Serviços</li>
+        <li>Contatos</li>
+    </ul><!--menu-->
+    
+</body>
+
+</htmL> 
+
+//CSS
+
+*{
+    margin: 0;
+    padding: 0;
+}
+ .menu{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    background-color: #007bff;
+    
+   
+}
+.menu li{
+    font-size: 23px;
+    color: white;
+    margin: 0 auto;
+   padding: 10px 20px;
+   cursor: pointer;
+}
+.menu li:hover{
+    background-color: rgb(0, 4, 107);    
+}

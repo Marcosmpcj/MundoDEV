@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="css/style.css" rel="stylesheet">
+    <title>Mais sobre backgrounds, text-align</title>
+</head>
+<body>
+
+    <!--<div class="bg"></div> -->
+
+    <div class="box">
+        <div class="item">
+            <img src="img/icon_responsive.png">
+            <h2>Meu Título</h2>
+            <p>Aqui está meu texto.Um pouco mais de texto</p>
+        </div><!--item-->
+
+        <div class="item">
+            <img src="img/icon_responsive.png">
+            <h2>Meu Título</h2>
+            <p>Aqui está meu texto.</p>
+        </div><!--item-->
+
+        <div class="item">
+            <img src="img/icon_responsive.png">
+            <h2>Meu Título</h2>
+            <p>Aqui está meu texto.</p>
+        </div><!--item-->
+
+
+
+    </div><!--box-->
+
+
+</body>
+
+</html> 
+
+//CSS
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    
+html, body {
+    height: 100%;
+}
+
+/*
+    .bg{
+        width: 100%;
+        margin: 0 auto;
+        height: 30vw; >viewport - tela visível
+        background-image: url('../img/sunset.jpg');
+        background-color: red;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: >fixed; scrool-por padrão
+
+        /*background-position: center;
+        
+    }
+    .box{
+        width: 900px;
+        height:2000px ;
+        background-color: rgb(100,100,100);
+        margin: 0 auto;
+    }
+*/
+
+
+.box{
+    width: 900px;
+    margin: 80px auto;
+    text-align: center; /*SE FOR INLINE E TIVER TEXTO*/ 
+    background-color: rgb(200,200,200);
+}
+.item{
+    width: 33.3%;
+    display: inline-block;/*TEM MERGEM EXTRA. CORRIGE COM -4px*/
+    margin-right:-4px;
+}

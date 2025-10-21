@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Javascript</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/assets/css/global.css" rel="stylesheet">
+    <script src="/assets/js/global.js" defer></script>
+
+</head>
+<body>
+
+   <div class="box"></div>
+   <div class="box"></div>
+   <div class="box"></div>
+   <div class="box"></div>
+   <div class="box"></div>
+   <div class="box"></div>
+
+</body>
+
+</html>
+
+//SCRIPT
+
+//Manipulando CSS através de Classes
+
+let elementos = document.getElementsByClassName('box');
+
+/*
+let el = elementos[0];
+el.style.width = '100px';
+el.style.height = '100px';
+el.style.backgroundColor = 'green';
+el.style.marginLeft = '200px'
+*/
+
+//lopping dinamico
+
+for (let i = 0; i < elementos.length; i++){
+    let el = elementos[i];
+
+    el.style.width = '100px';
+    el.style.height = '100px';
+    el.style.backgroundColor = 'green';
+    el.style.marginLeft = '200px';
+    el.style.borderWidth = '2px';
+    el.style.borderColor = 'black';
+    el.style.borderStyle = 'solid';
+}
+

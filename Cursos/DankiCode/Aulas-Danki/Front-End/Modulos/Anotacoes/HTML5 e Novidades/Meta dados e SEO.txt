@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Meta dados e SEO</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <!--tags para SEO-->
+        <meta name="description" content="Exemplo de descrição para o meu site">
+        <meta name="keywords" content="palavras-chaves, separadas,por , virgulas">
+    <!---->
+        <meta name="author" content="Marcos Paulo">
+
+        <link href="css/style.css" rel="stylesheet">
+        
+    </head>
+    <body>
+        
+        <div class="menu">
+            <a title="Home" href="#">Home</a>
+            <a title="Sobre" href="#">Sobre</a>
+            <a title="Contato" href="#">Contato</a>
+        </div><!--menu-->
+
+        <div class="img">
+            <img src="img/danki_bg.jpg">
+        </div><!--img-->
+
+
+        
+    </body>
+</html>

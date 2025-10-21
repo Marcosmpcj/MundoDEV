@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 500px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            border-color: #007BFF;
+            outline: none;
+        }
+
+        .error {
+            color: red;
+            font-size: 14px;
+            display: none;
+        }
+
+        .success {
+            border-color: green !important;
+        }
+
+        .error-border {
+            border-color: red !important;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            margin-top: 15px;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Formulário de Contato</h2>
+        <form id="contactForm">
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" placeholder="Digite seu nome">
+            <span class="error" id="nameError">Nome é obrigatório</span>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
+            <span class="error" id="emailError">Digite um e-mail válido</span>
+
+            <label for="age">Qual sua idade?</label>
+            <select id="age" name="age">
+                <option value="" disabled selected>Selecione</option>
+                <option value="20">20</option>
+                <option value="25+">25+</option>
+                <option value="40+">40+</option>
+            </select>
+            <span class="error" id="ageError">Selecione uma idade</span>
+
+            <label>Cidade</label>
+            <div class="radio-group">
+                <label><input type="radio" name="city" value="Florianópolis"> Florianópolis</label>
+                <label><input type="radio" name="city" value="Rio de Janeiro"> Rio de Janeiro</label>
+                <label><input type="radio" name="city" value="São Paulo"> São Paulo</label>
+            </div>
+            <span class="error" id="cityError">Escolha uma cidade</span>
+
+            <label>O que você gosta de comer?</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="food" value="Fruta"> Fruta</label>
+                <label><input type="checkbox" name="food" value="Fast Food"> Fast Food</label>
+                <label><input type="checkbox" name="food" value="Salada"> Salada</label>
+            </div>
+
+            <label for="message">Observações</label>
+            <textarea id="message" name="message" rows="4" placeholder="Digite sua observação"></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Impede o envio padrão do formulário
+
+            let isValid = true;
+
+            // Validação do nome
+            let nameInput = document.getElementById('name');
+            let nameError = document.getElementById('nameError');
+            if (nameInput.value.trim() === "") {
+                nameError.style.display = 'block';
+                nameInput.classList.add('error-border');
+                isValid = false;
+            } else {
+                nameError.style.display = 'none';
+                nameInput.classList.remove('error-border');
+                nameInput.classList.add('success');
+            }
+
+            // Validação do e-mail
+            let emailInput = document.getElementById('email');
+            let emailError = document.getElementById('emailError');
+            let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(emailInput.value)) {
+                emailError.style.display = 'block';
+                emailInput.classList.add('error-border');
+                isValid = false;
+            } else {
+                emailError.style.display = 'none';
+                emailInput.classList.remove('error-border');
+                emailInput.classList.add('success');
+            }
+
+            // Validação da idade
+            let ageInput = document.getElementById('age');
+            let ageError = document.getElementById('ageError');
+            if (ageInput.value === "") {
+                ageError.style.display = 'block';
+                isValid = false;
+            } else {
+                ageError.style.display = 'none';
+            }
+
+            // Validação da cidade
+            let cityError = document.getElementById('cityError');
+            let selectedCity = document.querySelector('input[name="city"]:checked');
+            if (!selectedCity) {
+                cityError.style.display = 'block';
+                isValid = false;
+            } else {
+                cityError.style.display = 'none';
+            }
+
+            // Se tudo estiver válido, exibe uma mensagem de confirmação antes de enviar
+            if (isValid) {
+                if (confirm("Tem certeza que deseja enviar o formulário?")) {
+                    alert("Formulário enviado com sucesso!");
+                    document.getElementById('contactForm').reset();
+                    document.querySelectorAll('.success').forEach(el => el.classList.remove('success'));
+                }
+            }
+        });
+
+    </script>
+
+</body>
+</html>

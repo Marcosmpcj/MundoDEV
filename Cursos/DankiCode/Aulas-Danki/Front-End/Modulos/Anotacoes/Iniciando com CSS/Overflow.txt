@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<htmL>
+<head>
+    <link href="css/style.css" rel="stylesheet">
+    <title>Overflow</title>
+
+</htmL>
+<body>
+    
+    <div class="box">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pellentesque euismod sapien sed mattis. Fusce lacus lectus, ultricies vitae pellentesque non, maximus id arcu. Vestibulum pharetra enim metus, ut euismod nisi ultricies sed. Curabitur tristique ipsum imperdiet justo cursus lacinia. Nunc ut ipsum sed lorem rutrum faucibus. Vivamus mattis nulla neque, sit amet semper urna imperdiet vitae. Aliquam in lectus gravida, rutrum massa vel, faucibus ante. Phasellus placerat finibus massa, ac tempor felis convallis et. Curabitur interdum neque tincidunt ligula interdum consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac urna nibh.
+        In at mauris condimentum, bibendum orci eu, maximus tellus.</p>
+    </div><!--box-->
+
+</body>
+
+</htmL> 
+
+//CSS
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+html,body{
+    height: 100%;
+}
+
+/*Overflow*/
+.box{
+    width: 300px;
+    background-color: gray;
+    margin: 0 auto;
+    height: 200px;
+    overflow: auto;/*CASO O TEXTO SEJA MAIOR QUE A DIV, DEVE-SE USAR
+    DESSE MÉTODO PARA CRIAR UM SCROLL BAR*/
+
+}
+/*
+OBS_
+#POR PADRÃO A O height JÁ É auto;
+#POR PADRÃO O overflow É visible;
+#overflow-x= CRIAR SCROLL BAR NA HORIZONTAL;
+*/

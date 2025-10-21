@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="css/style.css" rel="stylesheet">
+    <title>Tudo Sobre Background</title>
+</head>
+<body>
+
+    <header class="menu-fixed">
+        <div class="container">
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Sobre</a>
+                <a href="#">Serviços</a>
+                <a href="#">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Título Principal</h1>
+                <p>Uma breve descrição sobre o seu projeto.</p>
+                <button class="btn">Saiba Mais</button>
+            </div>
+        </section>
+
+        <section class="conteudo">
+            <div class="container">
+                <h2>Conteúdo Principal</h2>
+                <p>Aqui vai o conteúdo do seu projeto. Você pode adicionar imagens, textos, vídeos, etc.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Meu Projeto. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+   
+
+ 
+</body>
+
+</html> 
+
+//CSS
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    
+html, body {
+    height: 100%;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+/* Layout e Espaçamento */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.menu-fixed {
+    background-color: #007bff;
+    padding: 10px 0;
+    position: fixed; /* Mantém o menu fixo no topo */
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.menu-fixed nav {
+    display: flex;
+    justify-content: center; /* Centraliza os links horizontalmente */
+}
+
+.menu-fixed a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.hero {
+    background-image: url('imagem-de-fundo.jpg'); /* Adicione uma imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.conteudo {
+    padding: 50px 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}

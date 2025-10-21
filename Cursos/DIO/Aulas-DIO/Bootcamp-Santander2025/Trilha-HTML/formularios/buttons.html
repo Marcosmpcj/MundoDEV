@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+
+<body>
+
+    <form onsubmit="" name="signup" method="post" action="#URL do servidor" autocomplete="off">
+        Nome: <input type="text" name="name"><br>
+        Idade: <input type="number" name="age"><br>
+        Senha: <input type="password" name="password"><br>
+        <button type="button" onclick="alert('Clicado')">Clicável</button> <br><!--Apenas um botão sem funcionalidade, até ser alterado via js-->
+        <button type="reset" onclick="alert('Limpo')">Limpar</button> <br><!--Limpa os campos dentro do forms em que está-->
+        <button type="submit" onclick="alert('Enviado')">Limpar</button> <br><!--Envia o formulário ao servidor-->
+
+
+    </form>
+
+</body>
+
+</html>
+
+<!-- 
+method:POST = envia os dados do formulario pelo body da requisição.
+method:GET = envia os dados do formulario pela URL. -->

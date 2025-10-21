@@ -1,0 +1,24 @@
+
+//forEach - serve para interagir em arrays ou objetos.
+
+const nomes = ['Marcos', 'Caio', 'Labruna', 'Miguel']
+
+/*
+for (let i = 0; i < nomes.length; i++){
+    console.log(nomes[i])
+}
+*/
+
+//declarando forEach
+nomes.forEach(function (value,index) {
+    console.log(value)
+})
+
+console.log("---------------------------------------------")
+
+const ferramentas = ['alicate', 'martelo', 'serrote', 'chave']
+
+ferramentas.forEach(function (value, index) {
+    console.log(value,index)
+})
+

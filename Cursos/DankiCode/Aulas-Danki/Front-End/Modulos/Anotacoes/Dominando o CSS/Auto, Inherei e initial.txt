@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<htmL>
+<head>
+    <link href="css/style.css" rel="stylesheet">
+    <title>Auto, Inherei e initial</title>
+</head>
+<body>
+   <div class="box">
+    <span>Olá Mundo</span>
+   </div><!--box-->
+
+  
+</body>
+
+</htmL> 
+
+//CSS
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+}
+
+.box{
+    width: 400px;
+    height: 400px;
+    background-color: grey;
+}
+.box span{
+    width:inherit ;/*PERMITE HERDAR AS PROPRIEDADES DO PAI*/
+    height:inherit;
+    background-color: red;
+    display:inline-block ;/*PERMITE MANIPULAR ALTURA E LARGURA*/
+}
+
+#INITIAL:RESETA A PROPRIEDADE DO CSS POR PADRÃO.
