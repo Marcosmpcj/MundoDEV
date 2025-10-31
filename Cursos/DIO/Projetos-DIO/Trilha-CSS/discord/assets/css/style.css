@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*header*/
+header {
+    width: 100%;
+    height: 470px;
+    padding: 2rem 1.5rem;
+    background-image: url("../img/header_bg.png");
+    background-position: 70% 100%;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+header h1 {
+    font-family: 'Luckiest Guy';
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    width: 278px;
+    height: 64px;
+    margin-bottom: 2rem;
+}
+
+header .buttons {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+header .buttons input[type=button] {
+    margin-top: 1.5rem;
+    width: 320px;
+    height: 54px;
+    font-size: 1rem;
+    border-radius: 28px;
+    border-style: none;
+}
+
+header .buttons input[type=button]:hover {
+    cursor: pointer;
+}
+
+header input[type=button]:nth-of-type(2) {
+    background: #23272A;
+    color: white;
+}
+
+/*section-1*/
+
+main {
+    color: #23272A;
+}
+
+main section {
+    padding: 1rem 1.5rem;
+}
+
+main section figure {
+    display: flex;
+    justify-content: center;
+}
+
+main section figure img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+main section:nth-of-type(even) {
+    background: #f1f1f1;
+}
+
+main section h1 {
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+main section p {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.section-4 .content h1 {
+    font-family: 'Luckiest Guy';
+}
+
+footer {
+    height: 20vh;
+    background: #23272A;
+    display: grid;
+    place-items: center;
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+}
+
+footer .logo-footer img {
+    max-width: 100%;
+    height: auto;
+    max-height: 80px;
+}
+
+@media screen and (min-width:992px) {
+    header {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        padding: 3rem;
+    }
+
+    header h1 {
+        font-size: 3rem;
+        margin-bottom: 5rem;
+    }
+
+    header p {
+        width: 757px;
+    }
+
+    header .buttons {
+        flex-flow: row nowrap;
+    }
+
+    header .buttons input {
+        margin: 2rem 1rem;
+    }
+
+    main {
+        text-align: center;
+    }
+
+    main section {
+        padding: 2rem 4rem;
+        display: grid;
+        grid-template-columns: 60% 40%;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main section figure {
+        grid-column: 1 / 2;
+        justify-content: right;
+        align-items: center;
+    }
+
+    main section .content {
+        grid-column: 2 / 3;
+        text-align: left;
+    }
+
+    main section:nth-of-type(even) {
+        grid-template-columns: 40% 60%;
+    }
+
+    main section figure:nth-of-type(even) {
+        grid-column: 2 / 3;
+    }
+
+    .section-4 {
+        display: flex;
+        justify-content: center;
+        flex-flow: column nowrap;
+    }
+
+    .section-4 .content {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .section-4 .content h1 {
+        font-size: 40px;
+        text-align: center;
+        width: 500px;
+    }
+
+    .section-4 .content p {
+        width: 800px;
+    }
+
+    .section-4 figure {
+        width: 784px;
+    }
+
+}
